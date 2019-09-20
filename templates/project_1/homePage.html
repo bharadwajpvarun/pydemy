@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    {% load static %}
+<html>
+
+      <head>
+
+        <script src="https://unpkg.com/scrollreveal@4"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>   
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/homePage.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+            <title>pydemy</title>
+
+      </head>
+      <body>
+          <div class="loader"></div>
+        <!-- <div class="container fluid"> -->
+      <nav id="n" class="navbar navbar-expand-lg navbar-expand-xl">
+        <div class="c1 container-fluid">
+
+        <div class="rotate navbar-toggler" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="a"><img id="image" src="{% static 'css/py1.png' %}"><i class="fa fa-angle-right"></i></div>
+
+        <div class="navbar-brand" id="company" href="#">Pydemy</div>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                 Python Basics<i class="fa fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Variables</a>
+                <a class="dropdown-item" href="#">Constants</a>
+                <a class="dropdown-item" href="#">Data Types</a>
+                <a class="dropdown-item" href="#">Literals</a>
+                <a class="dropdown-item" href="#">Operators</a>
+                <a class="dropdown-item" href="#">Decision Making and Looping</a>
+                <a class="dropdown-item" href="#">Arrays</a>
+                <a class="dropdown-item" href="#">Exceptions Handling</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tkinter<i class="fa fa-angle-down"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Root</a>
+                <a class="dropdown-item" href="#">Frame</a>
+                <a class="dropdown-item" href="#">Label</a>
+                <a class="dropdown-item" href="#">Entry</a>
+                <a class="dropdown-item" href="#">Password</a>
+                <a class="dropdown-item" href="#">Dropdown</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="build-project" href="#">Build Mini Project</a>
+              </li>
+          </ul>      
+        </div>
+</nav>
+
+<div class="c2 container-fluid">
+     <div class="row1 row">
+          <div class="col-12">
+               <hr class="fst" >
+          </div>
+     </div>
+     <div class="row2 row">
+          <div class="col-12 col-lg-6 col-sm-6 col-m-6">
+               <h3 class="heading1">Pydemy<br> is new way<br> to<br> learn python</h3>
+          </div>
+          <div align="center" class="c3 col-6 col-lg-6 col-sm-6 col-m-6" >
+
+              <a class="ah" href="#" ><img class="f" src="{% static "css/auth.JPEG" %}"></a>
+
+         </div>
+
+    </div>
+      <div class="row3 row">
+           <div class="col-12">
+                <hr>
+           </div>
+      </div>
+      <div class="row4 row">
+           <div class="col-12">
+                <div class="heading2">
+                  What You will learn ?
+                </div>
+          </div>
+      </div>
+      <div class="row5 row">
+                <div class="heading3">
+                   <ul id="circle">
+                     <li>Python Basics.</li>
+                     <li>Tkinter GUI Framework.</li>
+                   </ul>
+                </div>
+     </div>
+</div>
+
+        <script>
+            $(".rotate").click(function () {
+           $(this).toggleClass("down");
+            })
+            </script>
+            <script type="text/javascript">
+              $(window).load(function() {
+                  $(".loader").fadeOut("slow");
+              });
+              </script>
+      </body>
+
+      <!-- <footer class="footer page-footer">
+          <div class="footer-copyright text-center py-3">Copyright © PYDEMY</div>
+      </footer> -->
+     
+</html>
